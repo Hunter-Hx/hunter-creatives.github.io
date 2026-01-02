@@ -1,66 +1,79 @@
-:root {
-  --bg: #0f172a;
-  --card: #111827;
-  --text: #e5e7eb;
-  --muted: #9ca3af;
-  --accent: #38bdf8;
-}
-
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: 'Segoe UI', system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  padding: 60px 20px;
-  text-align: center;
+/* Page */
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.7;
 }
 
-header h1 {
-  font-size: 2.5rem;
-}
-
-header p {
-  color: var(--muted);
-}
-
+/* Navigation */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 12px;
-  background: rgba(0,0,0,0.3);
-  backdrop-filter: blur(8px);
+  background: #000;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #333;
 }
 
 nav a {
-  color: var(--text);
+  color: #fff;
+  margin: 0 12px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 nav a:hover {
-  color: var(--accent);
+  text-decoration: underline;
 }
 
+/* Main content */
 main {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
+/* Cards (Stories / Poems previews) */
 .card {
-  background: var(--card);
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  background: #1b1b1b;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #777;
 }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  color: var(--muted);
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #bbb;
+}
+
+/* Links inside content */
+a {
+  color: #ddd;
+}
+
+a:hover {
+  color: #fff;
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Poetry / story paragraphs */
+p {
+  margin-bottom: 15px;
 }
