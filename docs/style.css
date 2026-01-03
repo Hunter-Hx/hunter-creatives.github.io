@@ -110,4 +110,37 @@ footer {
 .back-link:hover {
   color: #000;
 }
+/* ---------- DARK MODE ---------- */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark nav {
+  background: #000;
+}
+
+body.dark nav a {
+  color: #ddd;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  box-shadow: none;
+}
+
+body.dark .quote {
+  border-left-color: #888;
+  color: #ccc;
+}
+
+/* Dark mode button */
+.dark-btn {
+  margin-left: 1rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
