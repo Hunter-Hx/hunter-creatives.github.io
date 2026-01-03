@@ -143,4 +143,41 @@ body.dark .quote {
   cursor: pointer;
   font-size: 1rem;
 }
+/* Base styles */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  background: #fff;
+}
+
+/* Cards */
+.card {
+  background: #f9f9f9;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark {
+  background: #0f0f0f;
+  color: #e6e6e6;
+}
+
+body.dark .card {
+  background: #1a1a1a;
+}
+
+/* ---------- SMOOTH TRANSITIONS ---------- */
+body,
+nav,
+.card {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Hover polish */
+nav a:hover {
+  opacity: 0.7;
+}
 
