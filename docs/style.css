@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* ---------- BASE ---------- */
+/* ---------- BASE (LIGHT MODE) ---------- */
 body {
   font-family: "Georgia", serif;
   background: #f4f6f8;
@@ -28,7 +28,17 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffd369;
+  opacity: 0.7;
+}
+
+/* Dark mode button */
+.dark-btn {
+  margin-left: 1rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
 }
 
 /* ---------- MAIN ---------- */
@@ -47,6 +57,7 @@ h1 {
 /* ---------- CARDS ---------- */
 .card {
   background: #ffffff;
+  color: #222;
   padding: 2rem;
   margin-bottom: 2rem;
   border-radius: 12px;
@@ -68,7 +79,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-/* ---------- QUOTES (Bible / Poetry) ---------- */
+/* ---------- QUOTES ---------- */
 .quote {
   font-style: italic;
   border-left: 4px solid #ffd369;
@@ -82,6 +93,38 @@ footer {
   padding: 2rem;
   color: #777;
   font-size: 0.9rem;
+}
+
+/* ---------- DARK MODE ---------- */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark nav {
+  background: #000;
+}
+
+body.dark nav a {
+  color: #ddd;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  box-shadow: none;
+}
+
+body.dark .quote {
+  border-left-color: #888;
+  color: #ccc;
+}
+
+/* ---------- TRANSITIONS ---------- */
+body,
+nav,
+.card {
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ---------- MOBILE ---------- */
@@ -99,89 +142,3 @@ footer {
     padding: 1.5rem;
   }
 }
-.back-link {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  text-decoration: none;
-  color: #555;
-  font-weight: 600;
-}
-
-.back-link:hover {
-  color: #000;
-}
-/* ---------- DARK MODE ---------- */
-body.dark {
-  background: #121212;
-  color: #e0e0e0;
-}
-
-body.dark nav {
-  background: #000;
-}
-
-body.dark nav a {
-  color: #ddd;
-}
-
-body.dark .card {
-  background: #1e1e1e;
-  box-shadow: none;
-}
-
-body.dark .quote {
-  border-left-color: #888;
-  color: #ccc;
-}
-
-/* Dark mode button */
-.dark-btn {
-  margin-left: 1rem;
-  padding: 0.4rem 0.7rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-/* Base styles */
-body {
-  font-family: system-ui, sans-serif;
-  margin: 0;
-}
-
-/* Navigation */
-nav {
-  background: #fff;
-}
-
-/* Cards */
-.card {
-  background: #f9f9f9;
-}
-
-/* ---------- DARK MODE ---------- */
-body.dark {
-  background: #0f0f0f;
-  color: #e6e6e6;
-}
-
-body.dark .card {
-  background: #1a1a1a;
-}
-
-/* ---------- SMOOTH TRANSITIONS ---------- */
-body,
-nav,
-.card {
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-/* Hover polish */
-nav a:hover {
-  opacity: 0.7;
-}
-body {
-  background: #ffffff;
-  color: #111111;
-}
-
