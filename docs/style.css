@@ -216,3 +216,37 @@ body.dark {
   color: #999;
   border: 1px dashed #ddd;
 }
+/* ---------- COOKIE NOTICE ---------- */
+.cookie-notice {
+  position: fixed;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111;
+  color: #f2f2f2;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+  z-index: 1000;
+}
+
+.cookie-notice a {
+  color: #ffd369;
+  text-decoration: none;
+}
+
+.cookie-notice button {
+  background: #ffd369;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body.dark .cookie-notice {
+  background: #1a1a1a;
+}
