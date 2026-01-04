@@ -142,3 +142,9 @@ nav,
     padding: 1.5rem;
   }
 }
+.site-tagline {
+  text-align: center;
+  font-style: italic;
+  opacity: 0.8;
+  margin-bottom: 3rem;
+}
