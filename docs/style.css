@@ -208,3 +208,11 @@ body {
 body.dark {
   background: linear-gradient(180deg, #0f0f0f 0%, #121212 100%);
 }
+.ad-placeholder {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+  border: 1px dashed #ddd;
+}
