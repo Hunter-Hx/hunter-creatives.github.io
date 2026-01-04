@@ -196,3 +196,8 @@ main {
     line-height: 1.85;
   }
 }
+a:focus,
+button:focus {
+  outline: 2px dashed #ffd369;
+  outline-offset: 4px;
+}
