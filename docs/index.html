@@ -114,6 +114,19 @@
     document.body.classList.add("dark");
   }
 </script>
+<script>
+  const cookieNotice = document.getElementById("cookie-notice");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  if (localStorage.getItem("cookiesAccepted")) {
+    cookieNotice.style.display = "none";
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookieNotice.style.display = "none";
+  });
+</script>
 
 </body>
   <!-- Cookie Notice -->
