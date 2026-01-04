@@ -114,17 +114,21 @@
     document.body.classList.add("dark");
   }
 </script>
-<script>
-  const cookieNotice = document.getElementById("cookie-notice");
-  const acceptBtn = document.getElementById("accept-cookies");
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const cookieNotice = document.getElementById("cookie-notice");
+    const acceptBtn = document.getElementById("accept-cookies");
 
-  if (localStorage.getItem("cookiesAccepted")) {
-    cookieNotice.style.display = "none";
-  }
+    if (!cookieNotice || !acceptBtn) return;
 
-  acceptBtn.addEventListener("click", () => {
-    localStorage.setItem("cookiesAccepted", "true");
-    cookieNotice.style.display = "none";
+    if (localStorage.getItem("cookiesAccepted")) {
+      cookieNotice.style.display = "none";
+    }
+
+    acceptBtn.addEventListener("click", function () {
+      localStorage.setItem("cookiesAccepted", "true");
+      cookieNotice.style.display = "none";
+    });
   });
 </script>
 
