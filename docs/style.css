@@ -156,3 +156,14 @@ main {
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* ---------- READING MODE ---------- */
+.reading {
+  max-width: 720px;
+  margin: 3rem auto;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 1.8rem;
+}
