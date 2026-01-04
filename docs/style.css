@@ -167,3 +167,32 @@ main {
   line-height: 1.9;
   margin-bottom: 1.8rem;
 }
+/* ---------- MOBILE POLISH ---------- */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    margin: 2rem auto;
+    padding: 0 1.2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .story-text p {
+    font-size: 1.05rem;
+    line-height: 1.85;
+  }
+}
