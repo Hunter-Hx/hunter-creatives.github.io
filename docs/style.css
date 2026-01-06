@@ -250,3 +250,34 @@ body.dark {
 body.dark .cookie-notice {
   background: #1a1a1a;
 }
+.daily-quote {
+  margin: 40px auto;
+  padding: 25px;
+  max-width: 700px;
+  text-align: center;
+  font-style: italic;
+  border-left: 4px solid #444;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.daily-quote h2 {
+  margin-bottom: 15px;
+  font-style: normal;
+}
+
+#quote-text {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#quote-author {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Dark mode support */
+body.dark .daily-quote {
+  background: #1e1e1e;
+  border-left-color: #888;
+}
