@@ -276,28 +276,4 @@ body.dark .cookie-notice {
   opacity: 0.7;
 }
 
-/* Dark mode support */
-body.dark .daily-quote {
-  background: #1e1e1e;
-  border-left-color: #888;
-}
-.coffee-box {
-  text-align: center;
-  margin: 3rem 0;
-}
 
-.coffee-box a {
-  display: inline-block;
-  background: #ff5f5f;
-  color: #fff;
-  padding: 0.8rem 1.4rem;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.coffee-box a:hover {
-  transform: translateY(-2px);
-  opacity: 0.9;
-}
