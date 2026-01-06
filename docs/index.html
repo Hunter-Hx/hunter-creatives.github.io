@@ -91,33 +91,7 @@
 </footer>
 
 </body>
-  <script>
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark");
-  }
-  <script>
-  function toggleDarkMode() {
-    document.body.classList.toggle("dark");
-  }
-
-  const quotes = [
-    { text: "The unexamined life is not worth living.", author: "Socrates" },
-    { text: "Man is condemned to be free.", author: "Jean-Paul Sartre" },
-    { text: "Pain and suffering are always inevitable for a large intelligence.", author: "Fyodor Dostoevsky" },
-    { text: "To live is to suffer, to survive is to find meaning in suffering.", author: "Nietzsche" },
-    { text: "Silence is sometimes the loudest scream.", author: "Unknown" }
-  ];
-
-  const today = new Date().getDate();
-  const quote = quotes[today % quotes.length];
-
-  document.getElementById("quote-text").textContent = `"${quote.text}"`;
-  document.getElementById("quote-author").textContent = `— ${quote.author}`;
-</script>
-  const lastUpdated = new Date(document.lastModified);
-  const options = { year: 'numeric', month: 'long' };
-  document.getElementById("last-updated").textContent =
-    lastUpdated.toLocaleDateString(undefined, options);
+ 
 </script>
 
 </html>
@@ -169,4 +143,18 @@
 <div class="ad-placeholder">
   <p>Advertisement</p>
 </div>
+  <script>
+  const quotes = [
+    { text: "The unexamined life is not worth living.", author: "Socrates" },
+    { text: "Man is condemned to be free.", author: "Jean-Paul Sartre" },
+    { text: "Pain and suffering are always inevitable for a large intelligence.", author: "Fyodor Dostoevsky" }
+  ];
+
+  const today = new Date().getDate();
+  const quote = quotes[today % quotes.length];
+
+  document.getElementById("quote-text").textContent = `"${quote.text}"`;
+  document.getElementById("quote-author").textContent = `— ${quote.author}`;
+</script>
+
 </body>
