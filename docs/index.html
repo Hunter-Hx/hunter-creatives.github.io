@@ -49,7 +49,10 @@
   <p id="quote-text"></p>
   <p id="quote-author"></p>
 </section>
-
+<section class= "card">
+  <h2>Did You Know?</h2>
+  <p id= "daily-fact"></p>
+</section>
   <section>
     <h2>Welcome Welcome</h2>
     <p class="quote">A quiet place for stories, thoughts and fun.</p>
@@ -205,6 +208,20 @@
 
   document.getElementById("quote-text").textContent = `"${quote.text}"`;
   document.getElementById("quote-author").textContent = `— ${quote.author}`;
+</script>
+<script>
+  const facts = [
+    "The human brain uses about 20% of the body's total energy.",
+    "Octopuses have three hearts and blue blood.",
+    "A day on Venus is longer than a year on Venus.",
+    "Honey never spoils — jars found in ancient tombs are still edible.",
+    "Your brain is more active at night than during the day."
+  ];
+
+  const today = new Date();
+  const index = today.getDate() % facts.length;
+
+  document.getElementById("daily-fact").textContent = facts[index];
 </script>
 
 </body>
