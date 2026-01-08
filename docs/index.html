@@ -212,18 +212,19 @@
 </script>
   
 <script>
-  const facts = [
-    "The human brain uses about 20% of the body's total energy.",
-    "Octopuses have three hearts and blue blood.",
-    "A day on Venus is longer than a year on Venus.",
-    "Honey never spoils — jars found in ancient tombs are still edible.",
-    "Your brain is more active at night than during the day."
-  ];
+  document.addEventListener("DOMContentLoaded", function () {
+    const facts = [
+      "The human brain uses about 20% of the body's total energy.",
+      "Octopuses have three hearts.",
+      "Honey never spoils.",
+      "A day on Venus is longer than a year on Venus."
+    ];
 
-  const today = new Date();
-  const index = today.getDate() % facts.length;
+    const today = new Date();
+    const index = today.getDate() % facts.length;
 
-  document.getElementById("daily-fact").textContent = facts[index];
+    document.getElementById("daily-fact").textContent = facts[index];
+  });
 </script>
 
 </body>
