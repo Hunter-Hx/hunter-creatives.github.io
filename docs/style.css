@@ -302,5 +302,36 @@ body.dark .cookie-notice {
   text-align: center;
   color: #333;
 }
+/* ---------- FEATURED CONTENT ---------- */
+.featured h2 {
+  color: #b8860b;
+  margin-bottom: 0.5rem;
+}
+
+.featured h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Dark mode support */
+body.dark .featured h2 {
+  color: #ffd369;
+}
+
+body.dark .read-more {
+  color: #e0e0e0;
+}
 
 
