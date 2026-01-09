@@ -334,4 +334,43 @@ body.dark .read-more {
   color: #e0e0e0;
 }
 
+.countdown-container {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #111, #1a1a1a);
+  color: #fff;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.countdown-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#countdown div {
+  background: #222;
+  padding: 15px 20px;
+  border-radius: 10px;
+  min-width: 90px;
+}
+
+#countdown span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+}
+
+#countdown small {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
 
