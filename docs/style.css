@@ -373,4 +373,30 @@ body.dark .read-more {
   font-size: 0.8rem;
   opacity: 0.7;
 }
+.like-box {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+}
+
+.like-btn {
+  border: none;
+  background: #ffd369;
+  color: #111;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.like-btn:hover {
+  opacity: 0.85;
+}
+
+body.dark .like-btn {
+  background: #444;
+  color: #fff;
+}
 
