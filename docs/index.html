@@ -297,33 +297,6 @@
       Math.floor((distance / 1000) % 60);
   }, 1000);
 </script>
-<script>
-  const pageKey = "likes-" + window.location.pathname;
-  let liked = localStorage.getItem(pageKey) === "true";
-  let count = parseInt(localStorage.getItem(pageKey + "-count")) || 0;
 
-  const countEl = document.getElementById("like-count");
-
-  if (liked) {
-    countEl.textContent = count || 1;
-  } else {
-    countEl.textContent = count;
-  }
-
-  function toggleLike() {
-    liked = !liked;
-
-    if (liked) {
-      count++;
-      localStorage.setItem(pageKey, "true");
-    } else {
-      count--;
-      localStorage.removeItem(pageKey);
-    }
-
-    localStorage.setItem(pageKey + "-count", count);
-    countEl.textContent = count;
-  }
-</script>
 
 </body>
