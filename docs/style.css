@@ -399,4 +399,33 @@ body.dark .like-btn {
   background: #444;
   color: #fff;
 }
+.chapter-list {
+  list-style: none;
+  padding: 0;
+}
+
+.chapter-list li {
+  margin: 12px 0;
+}
+
+.chapter-list a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dashed #aaa;
+}
+
+.chapter-list a:hover {
+  opacity: 0.7;
+}
+
+.chapter {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.chapter-nav {
+  margin-top: 30px;
+  text-align: right;
+}
 
