@@ -45,6 +45,26 @@
 </div>
 
 </main>
+<script>
+  let liked = false;
+  let count = localStorage.getItem("counting-dead-likes") || 0;
+
+  const countEl = document.getElementById("like-count");
+  countEl.textContent = count;
+
+  function toggleLike() {
+    liked = !liked;
+
+    if (liked) {
+      count++;
+    } else {
+      count--;
+    }
+
+    localStorage.setItem("counting-dead-likes", count);
+    countEl.textContent = count;
+  }
+</script>
 
 </body>
 </html>
