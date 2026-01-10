@@ -73,6 +73,33 @@
   </p>
 </article>
 </main>
+<script>
+  document.querySelectorAll(".story").forEach(story => {
+    const id = story.dataset.id;
+    const btn = story.querySelector(".like-btn");
+    const countEl = story.querySelector(".like-count");
+
+    let liked = localStorage.getItem(id) === "true";
+    let count = parseInt(localStorage.getItem(id + "-count")) || 0;
+
+    countEl.textContent = count;
+
+    btn.addEventListener("click", () => {
+      liked = !liked;
+
+      if (liked) {
+        count++;
+        localStorage.setItem(id, "true");
+      } else {
+        count--;
+        localStorage.removeItem(id);
+      }
+
+      localStorage.setItem(id + "-count", count);
+      countEl.textContent = count;
+    });
+  });
+</script>
 
 </body>
 </html>
