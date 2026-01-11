@@ -324,6 +324,41 @@ body.dark .cookie-notice {
 .read-more:hover {
   text-decoration: underline;
 }
+/* ---------- BOOK READING STYLE ---------- */
+.chapter {
+  max-width: 650px;
+  margin: 4rem auto;
+  font-family: "Georgia", serif;
+}
+
+.chapter h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.chapter-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  margin-bottom: 3rem;
+}
+
+/* Paragraph spacing like a novel */
+.chapter-text p {
+  margin-bottom: 1.5rem;
+}
+
+/* Chapter navigation */
+.chapter-nav {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
+  font-weight: 600;
+}
+
+.chapter-nav a {
+  text-decoration: none;
+}
 
 /* Dark mode support */
 body.dark .featured h2 {
