@@ -463,4 +463,10 @@ body.dark .like-btn {
   margin-top: 30px;
   text-align: right;
 }
+.story-meta {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
 
