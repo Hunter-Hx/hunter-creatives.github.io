@@ -525,4 +525,9 @@ body.reading .chapter {
   border-radius: 10px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+@media (min-width: 900px) {
+  .book-cover {
+    max-width: 240px;
+  }
+}
 
