@@ -21,6 +21,9 @@
     <p class="story-meta">
   Fiction • 5 min read • Updated Jan 2026
 </p>
+<button class="read-mode-btn" onclick="toggleReadMode()">
+  📖 Reading Mode
+</button>
 
 
     <p>
@@ -35,6 +38,11 @@
     <a href="still-counting-the-dead-ch2.html">Next Chapter →</a>
   </div>
 </main>
+<script>
+function toggleReadMode() {
+  document.body.classList.toggle("reading");
+}
+</script>
 
 </body>
 </html>
