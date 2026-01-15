@@ -530,4 +530,41 @@ body.reading .chapter {
     max-width: 240px;
   }
 }
+/* ---------- FONT SIZE CONTROLS ---------- */
+.font-controls {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.font-controls button {
+  margin: 0 0.4rem;
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.font-controls button:hover {
+  background: #eee;
+}
+
+/* Font size modes */
+body.font-small .chapter-text {
+  font-size: 0.95rem;
+}
+
+body.font-normal .chapter-text {
+  font-size: 1.1rem;
+}
+
+body.font-large .chapter-text {
+  font-size: 1.35rem;
+}
+
+/* Dark mode support */
+body.dark .font-controls button:hover {
+  background: #222;
+}
 
