@@ -469,4 +469,12 @@ body.dark .like-btn {
   color: #777;
   margin-bottom: 2rem;
 }
+body.reading nav,
+body.reading footer {
+  display: none;
+}
+
+body.reading .chapter {
+  margin-top: 2rem;
+}
 
