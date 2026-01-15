@@ -522,8 +522,8 @@ body.reading .chapter {
   height: auto;
   display: block;
   margin: 1.5rem auto;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
 }
 @media (min-width: 900px) {
   .book-cover {
