@@ -49,6 +49,17 @@ function toggleReadMode() {
   document.body.classList.toggle("reading");
 }
 </script>
+<script>
+function setFontSize(size) {
+  document.body.classList.remove("font-small", "font-normal", "font-large");
+  document.body.classList.add("font-" + size);
+  localStorage.setItem("fontSize", size);
+}
+
+// Load saved preference
+const savedFont = localStorage.getItem("fontSize") || "normal";
+setFontSize(savedFont);
+</script>
 
 </body>
 </html>
