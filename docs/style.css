@@ -567,4 +567,17 @@ body.font-large .chapter-text {
 body.dark .font-controls button:hover {
   background: #222;
 }
+/* ---------- OPENING LINE SPOTLIGHT ---------- */
+.opening-line {
+  font-size: 1.35rem;
+  font-style: italic;
+  margin-bottom: 1.8rem;
+  color: #333;
+}
+
+/* Book mode enhancement */
+body.book-mode .opening-line {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+}
 
