@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unpopular Opinion | Hunter Creatives</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="poems.html">Poems</a>
+  <a href="apps.html">Apps</a>
+  <a href="bible.html">Bible Verses</a>
+  <a href="humor.html">Humor</a>
+  <a href="opinion.html">Unpopular Opinion</a>
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+</nav>
+
+<main>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+
+  <h1>Unpopular Opinion</h1>
+
+  <article class="card">
+    <p>
+      Oxygen and Potassium went on a date and it's totally OK.
+      But yesterday I saw Oxygen with Magnesium and I was like OMg he is cheating on Potassium.
+    </p>
+  </article>
+
+  <article class="card">
+    <p>
+      She texted me 'good morning handsome'. Had to get up and look outside to see if it was morning<br>
+      'Cause these girls lie too much.
+    </p>
+  </article>
+
+</main>
+
+<footer>
+  <p>© 2026 Hunter Creatives</p>
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+
+    // Save preference
+    if (document.body.classList.contains("dark")) {
+      localStorage.setItem("theme", "dark");
+    } else {
+      localStorage.setItem("theme", "light");
+    }
+  }
+
+  // Load saved theme on page load
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+</script>
+
+
+</body>
+</html>
