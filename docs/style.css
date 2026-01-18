@@ -611,18 +611,5 @@ body.book-mode .opening-line {
   letter-spacing: 1px;
 }
 
-/* Book mode active */
-.book-mode .book {
-  max-width: 640px;
-}
 
-/* Background feel */
-.book-mode body {
-  background: #fdfaf5;
-}
-/* Layout */
-main {
-  display: flex;
-  gap: 40px;
-}
 
