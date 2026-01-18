@@ -588,3 +588,35 @@ body.book-mode .opening-line {
   margin-bottom: 1.0rem;
 }
 /* ---------- ADS
+/* Book container */
+.book {
+  max-width: 720px;     /* book width */
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+/* Paragraphs */
+.book .para {
+  text-indent: 2em;
+  margin-bottom: 1.4em;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* Headings */
+.book h2 {
+  text-align: center;
+  margin: 80px 0 40px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+/* Book mode active */
+.book-mode .book {
+  max-width: 640px;
+}
+
+/* Background feel */
+.book-mode body {
+  background: #fdfaf5;
+}
