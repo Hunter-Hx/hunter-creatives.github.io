@@ -611,5 +611,21 @@ body.book-mode .opening-line {
   letter-spacing: 1px;
 }
 
+.book-layout {
+  display: flex;
+  gap: 40px;
+}
+
+/* Keep content readable */
+.book {
+  max-width: 700px;
+}
+
+/* TOC stays fixed while reading */
+.toc {
+  width: 220px;
+  position: sticky;
+  top: 100px;
+}
 
 
