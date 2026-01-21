@@ -627,5 +627,10 @@ body.book-mode .opening-line {
   position: sticky;
   top: 100px;
 }
+.logo {
+  width: 120px;
+  max-width: 40%;
+  margin-bottom: 1rem;
+}
 
 
