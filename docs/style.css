@@ -632,5 +632,9 @@ body.book-mode .opening-line {
   max-width: 40%;
   margin-bottom: 1rem;
 }
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
 
 
