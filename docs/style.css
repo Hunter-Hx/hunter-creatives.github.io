@@ -629,12 +629,21 @@ body.book-mode .opening-line {
 }
 .logo {
   width: 120px;
-  max-width: 60px;
+  max-width: 60%;
   margin-bottom: 1rem;
 }
 header {
   text-align: center;
   padding: 2rem 1rem;
+}
+.logo {
+  width: 180px;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 120px;
+  }
 }
 
 
