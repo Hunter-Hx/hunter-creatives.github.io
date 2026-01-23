@@ -206,5 +206,19 @@ setFontSize(savedFont);
     document.body.classList.add("dark");
   }
 </script>
+  <script>
+  const unlocked = false;
+
+  if (!unlocked) {
+    document.body.innerHTML = `
+      <main style="text-align:center; margin-top:100px;">
+        <h1>🔒 Chapter Locked</h1>
+        <p>This chapter will be released soon.</p>
+        <a href="stories.html">Back to stories</a>
+      </main>
+    `;
+  }
+</script>
+
 </body>
 </html>
