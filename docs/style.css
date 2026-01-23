@@ -655,5 +655,20 @@ header {
   font-style: italic;
   text-align: center;
 }
+#progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #eee;
+  z-index: 9999;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #222;
+}
 
 
