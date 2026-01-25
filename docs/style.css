@@ -670,5 +670,18 @@ header {
   width: 0%;
   background: #222;
 }
+body {
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.7;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
 
 
