@@ -44,6 +44,17 @@ function toggleReadMode() {
   document.body.classList.toggle("reading");
 }
 </script>
+<script>
+  const unlocked = false;
 
+  if (!unlocked) {
+    document.body.innerHTML = `
+      <main style="text-align:center; margin-top:100px;">
+        <h1>🔒 Chapter Locked</h1>
+        <p>This chapter will be released on 5th February</p>
+      </main>
+    `;
+  }
+</script>
 </body>
 </html>
