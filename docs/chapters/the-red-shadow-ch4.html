@@ -12,6 +12,7 @@
   <a href="../index.html">Home</a>
   <a href="../stories.html">Stories</a>
   <a href="../the-red-shadow.html">Back to Novel</a>
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button> 
 </nav>
 
 <main>
@@ -92,3 +93,8 @@ function toggleReadMode() {
 </script>
 </body>
 </html>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+  }
+</script>
