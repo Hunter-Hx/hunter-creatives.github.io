@@ -912,8 +912,8 @@ body {
 .hero-title {
   font-size: 38px;
   letter-spacing: 3px;
-  margin-bottom: 10px;
   color: #fff;
+  text-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
 .hero-tagline {
