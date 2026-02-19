@@ -785,6 +785,13 @@ body {
   letter-spacing: 3px;
   color: #fff;
   margin-bottom: 15px;
+  position: relative;
+
+  /* Soft gold glow */
+  text-shadow:
+    0 0 5px rgba(212, 175, 55, 0.6),
+    0 0 10px rgba(212, 175, 55, 0.4),
+    0 0 20px rgba(212, 175, 55, 0.2);
 }
 
 /* Thin Glowing Gold Line */
@@ -833,3 +840,12 @@ body {
   color: #666;
 }
 
+@keyframes subtleGlow {
+  0% { text-shadow: 0 0 5px rgba(212,175,55,0.4); }
+  50% { text-shadow: 0 0 15px rgba(212,175,55,0.7); }
+  100% { text-shadow: 0 0 5px rgba(212,175,55,0.4); }
+}
+
+.footer-logo {
+  animation: subtleGlow 4s infinite ease-in-out;
+    }
