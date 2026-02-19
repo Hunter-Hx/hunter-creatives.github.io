@@ -771,3 +771,65 @@ body {
   text-align: center;
   font-size: 14px;
                               }
+.site-footer {
+  background-color: #000;
+  color: #ddd;
+  padding: 70px 20px 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand Name */
+.footer-logo {
+  font-size: 26px;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Thin Glowing Gold Line */
+.gold-line {
+  width: 80px;
+  height: 2px;
+  margin: 0 auto 20px auto;
+  background: linear-gradient(90deg, transparent, #d4af37, transparent);
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
+}
+
+/* Luxury Tagline */
+.footer-tagline {
+  font-family: "Georgia", serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 30px;
+}
+
+.gold-accent {
+  color: #d4af37;
+}
+
+/* Links */
+.footer-links {
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #d4af37;
+}
+
+/* Bottom Credit */
+.footer-credit {
+  font-size: 13px;
+  color: #666;
+}
+
