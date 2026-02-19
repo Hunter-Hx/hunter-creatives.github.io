@@ -173,11 +173,21 @@
       <a href="terms.html">Terms & Conditions</a>
       <a href="disclaimer.html">Disclaimer</a>
     </div>
-
+<div class="footer-social">
+  <a href="#">Instagram</a>
+  <a href="#">X</a>
+  <a href="mailto:your@email.com">Email</a>
+</div>
+    
     <p class="footer-credit">
-      © 2026 Hunter Creatives • Designed by <em>Hunter</em><br>
-      All Rights Reserved. 
-    </p>
+  © <span id="year"></span> Hunter Creatives • Designed by <em>Hunter</em><br>
+  All Rights Reserved.
+</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
   </div>
 
