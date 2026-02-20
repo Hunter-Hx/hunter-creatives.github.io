@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SILENT CRIES AND OTHER POEMS</title>
+  <meta name="description" content="Original fiction, works in progress, and long-form stories exploring memory, loss, and meaning.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="stories.html">Stories</a>
+  <a href="bible.html">Bible</a>
+  <a href="humor.html">Humour amd Jokes</a>
+  <a href="opinion.html">Unpopular Opinions</a>
+  <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+  
+</nav>
+
+<main>
+<a href="index.html" class="back-link">← Back to Home</a>
+
+</main>
+
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+    localStorage.setItem(
+      "theme",
+      document.body.classList.contains("dark") ? "dark" : "light"
+    );
+  }
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+  }
+</script>
+
+</body>
+</html>
