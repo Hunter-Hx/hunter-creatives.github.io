@@ -986,3 +986,53 @@ body {
   text-decoration: none;
   color: #d4af37;
   }
+
+/* POEM PAGE */
+
+.poem-hero {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.poem-title {
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: #d4af37;
+  margin: 15px auto;
+}
+
+.poem-subtitle {
+  color: #d4af37;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.poem-content {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.9;
+  font-size: 18px;
+  font-family: Georgia, serif;
+}
+
+.poem-navigation {
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.poem-navigation a {
+  text-decoration: none;
+  color: #d4af37;
+  font-weight: bold;
+  }
